@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+int amount, sum, number=0;
+	printf("Enter a AMOUNT");
+	scanf("%d", &amount);
+    while(amount!=sum){
+    	if(amount%5==0){
+    		sum+=5;
+    		number++;
+		}
+		else if(amount%2!=0){
+    		sum+=1;
+    		number++;
+		}
+			else if(amount%10==0){
+    		sum+=10;
+    		number++;
+		}
+			else if(amount%25==0){
+    		sum+=25;
+    		number++;
+		}
+    	
+    	
+    	
+	}
+	printf("total coins required are %d", number);
+	return 0;
+}
