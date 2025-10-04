@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+	int balance=50000;
+	int amount;
+	while(balance>=0){
+		printf("\nenter the withdrawal amount");
+		scanf("%d", &amount);
+		balance=balance-amount;
+		if(balance<=0){
+			printf("your dont have sufficient funds");
+			
+		}
+		else{
+		printf("collect your cash\n your remaining balance is %d", balance);	
+		}
+	
+	}
+	
+	return 0;
+}
