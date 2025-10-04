@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+	int participants, factorial=1;
+
+	printf("\nenter the The number of participants");
+		scanf("%d", &participants);
+		int i = participants;
+	do{
+	if(i>0){
+	
+		factorial*=i;
+		}
+		i--;
+	}while(i>0);
+	participants=factorial;	
+		printf("The total Arrangements can be %d", participants);
+
+	return 0;
+	
+	
+	
+}
