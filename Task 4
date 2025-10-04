@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+	int A, a;
+	int  result, remainder;
+	printf("Enter a number:");
+	scanf("%d", &A);
+	a=A;
+    while(A!=0){
+    	remainder=A%10;
+    	result+=remainder*remainder*remainder;
+    	A=A/10;	
+	}
+	if(result==a){
+		printf("\nIts an angstrom number");
+		
+	}else{
+		printf("Its not an angstrom number");
+	}
+	
+	
+}
